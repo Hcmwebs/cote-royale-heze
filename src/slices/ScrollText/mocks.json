@@ -1,0 +1,25 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"eyebrow": {
+				"__TYPE__": "FieldContent",
+				"value": "bean",
+				"type": "Text"
+			},
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Magna nostrud nulla proident sint. Aute ex labore fugiat minim magna id sunt cillum. Ex nostrud nulla mollit labore ea nostrud do mollit non aute ut officia magna labore."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
