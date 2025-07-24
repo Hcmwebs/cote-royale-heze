@@ -7,6 +7,7 @@ import { createClient } from "@/prismicio";
 import { Bounded } from "@/components/Bounded";
 import { FadeIn } from "@/components/FadeIn";
 import { formatPrice } from "@/utils/formatters";
+import { ButtonLink } from "@/components/ButtonLink";
 
 /**
  * Props for `ProductFeature`.
@@ -36,6 +37,7 @@ const ProductFeature: FC<ProductFeatureProps> = async ({ slice }) => {
         <FadeIn
           className="translate-y-16 opacity-0 lg:col-span-2 lg:row-span-2"
           vars={{ duration: 1 }}
+          start="top 70%"
         >
           <PrismicNextImage
             field={slice.primary.feature_image}
@@ -72,7 +74,13 @@ const ProductFeature: FC<ProductFeatureProps> = async ({ slice }) => {
                 />
               </h3>
               <p className="mt-2 text-gray-400">Eau de Parfum</p>
-              <p>Button Link</p>
+              <ButtonLink
+                document={fragrance}
+                variant="Secondary"
+                className="mt-6"
+              >
+                Shop Now
+              </ButtonLink>
             </div>
             <p className="mt-4 text-gray-100" aria-label="Product price">
               <span>{formattedPrice}</span>
