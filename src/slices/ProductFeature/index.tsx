@@ -65,7 +65,7 @@ const ProductFeature: FC<ProductFeatureProps> = async ({ slice }) => {
           />
           <div className="flex justify-between p-10 pt-4">
             <div className="space-y-1">
-              <h3>
+              <h3 className="font-display text-4xl">
                 <PrismicText
                   field={fragrance?.data.title}
                   fallback="Fragrance"
