@@ -23,7 +23,6 @@ const FragranceList: FC<FragranceListProps> = ({ slice }) => {
       <PrismicRichText field={slice.primary.heading} />
       <PrismicRichText field={slice.primary.body} />
       {slice.primary.fragrances.map((item) => (
-        // Render the item
         <PrismicNextLink field={item.fragrance}>Link</PrismicNextLink>
       ))}
     </Bounded>
