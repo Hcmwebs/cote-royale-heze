@@ -1,0 +1,57 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"eyebrow": {
+				"__TYPE__": "FieldContent",
+				"value": "scientist",
+				"type": "Text"
+			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Where"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Dolore excepteur qui reprehenderit nulla velit dolore do aliqua. Sunt eiusmod duis nostrud id aliqua nulla consectetur reprehenderit dolor. Reprehenderit labore adipisicing anim amet culpa mollit anim laboris eiusmod nisi."
+						}
+					}
+				]
+			},
+			"fragrances": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"fragrance",
+								{
+									"__TYPE__": "LinkContent",
+									"key": "c4453eb2-8c91-41d2-b0e8-bce5caeea3f6",
+									"value": {
+										"__TYPE__": "DocumentLink",
+										"id": "mock_document_id"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
