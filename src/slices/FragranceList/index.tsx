@@ -1,9 +1,11 @@
 import { FC } from "react";
-import { Content } from "@prismicio/client";
+import { Content, isFilled } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
-import { Bounded } from "@/components/Bounded";
 import { PrismicNextLink } from "@prismicio/next";
+
+import { Bounded } from "@/components/Bounded";
 import { RevealText } from "@/components/RevealText";
+import { FragranceDisplay } from "./FragranceDisplay";
 
 /**
  * Props for `FragranceList`.
@@ -34,11 +36,21 @@ const FragranceList: FC<FragranceListProps> = ({ slice }) => {
           staggerAmount={0.3}
           className="font-display text-5xl uppercase sm:text-6xl md:text-7xl lg:text-8xl"
         />
-        <PrismicRichText field={slice.primary.heading} />
-        <PrismicRichText field={slice.primary.body} />
-        {slice.primary.fragrances.map((item) => (
-          <PrismicNextLink field={item.fragrance}>Link</PrismicNextLink>
-        ))}
+        <div className="mx-auto max-w-2xl text-lg text-balance text-gray-300">
+          <PrismicRichText field={slice.primary.body} />
+        </div>
+        <div className="mt-12 grid grid-cols-1 gap-12">
+          {slice.primary.fragrances.map((item) => {
+            if (isFilled.contentRelationship(item.fragrance)) {
+              return (
+                <FragranceDisplay
+                  key={item.fragrance.id}
+                  id={item.fragrance.id}
+                />
+              );
+            }
+          })}
+        </div>
       </div>
     </Bounded>
   );
