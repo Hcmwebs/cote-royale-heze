@@ -5,8 +5,8 @@
 		"primary": {
 			"eyebrow": {
 				"__TYPE__": "FieldContent",
-				"value": "view",
-				"type": "Text"
+				"type": "Text",
+				"value": "  Fragrance Quiz"
 			},
 			"heading": {
 				"__TYPE__": "StructuredTextContent",
@@ -14,8 +14,10 @@
 					{
 						"type": "heading2",
 						"content": {
-							"text": "Island"
-						}
+							"text": "The Côte Royale Fragrance Finder",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -40,7 +42,7 @@
 						"value": {
 							"__TYPE__": "ExternalLink",
 							"url": "http://twitter.com",
-							"text": "steep",
+							"text": "See the quiz",
 							"variant": "Secondary"
 						}
 					}
