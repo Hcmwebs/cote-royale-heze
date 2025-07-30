@@ -10,6 +10,7 @@ import { Bounded } from "@/components/Bounded";
 import { FragranceAttributes } from "@/components/FragranceAttributes";
 import { formatPrice } from "@/utils/formatters";
 import { HiStar } from "react-icons/hi2";
+import { OtherFragrances } from "@/components/OtherFragrances";
 
 type Params = { uid: string };
 
@@ -71,10 +72,12 @@ export default async function Page({ params }: { params: Promise<Params> }) {
                 ))}
                 <HiStar className="size-5 fill-current text-white/50" />
               </div>
+              <span>4.4/5</span>
             </div>
           </div>
         </div>
       </div>
+      <OtherFragrances currentFragranceUId={uid} />
     </Bounded>
   );
 }
