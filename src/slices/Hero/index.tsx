@@ -1,12 +1,10 @@
 import { FC } from "react";
 import { Content } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
-import { PrismicNextLink, PrismicNextImage } from "@prismicio/next";
-
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { PrismicNextImage } from "@prismicio/next";
 import { Bounded } from "@/components/Bounded";
 import { FadeIn } from "@/components/FadeIn";
-import { clsx } from "clsx";
+
 import { RevealText } from "@/components/RevealText";
 import { ButtonLink } from "@/components/ButtonLink";
 
@@ -66,15 +64,6 @@ const Hero: FC<HeroProps> = ({ slice }) => {
               className="w-fit"
               variant="Secondary"
             />
-            // <PrismicNextLink
-            //   className={clsx(
-            //     "inline-flex items-center justify-center px-12 py-4 text-center font-extrabold tracking-wider uppercase transition-colors duration-300",
-            //     link.variant === "Secondary"
-            //       ? "border border-white text-white hover:bg-white/20"
-            //       : "bg-white text-black hover:bg-white/80",
-            //     "w-fit",
-            //   )}
-            // />
           ))}
         </FadeIn>
       </div>
